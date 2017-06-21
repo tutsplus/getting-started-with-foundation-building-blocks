@@ -1,0 +1,20 @@
+$marketing-site-hero-height: 100vh;
+
+.marketing-site-hero {
+  background: url('../img/desk.jpg') top right no-repeat;
+  height: $marketing-site-hero-height;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 40em) {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: $global-width;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, .5);
+}

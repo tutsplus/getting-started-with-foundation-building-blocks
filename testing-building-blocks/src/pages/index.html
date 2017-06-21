@@ -1,0 +1,104 @@
+<!-- Nav -->
+<div data-sticky-container>
+  <div class="top-bar" data-sticky data-margin-top="0" id="example-menu">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text">Site Title</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu" data-magellan>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#" class="button">Buy Now</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Hero -->
+{{> marketing-site-hero}}
+
+<br><br><br>
+
+<!-- Tabs -->
+<section id="tabs" data-magellan-target="tabs">
+  <div class="row">
+    <div class="columns small-10 small-centered text-center">
+      <h2>A section with tabs</h2>
+      <h5>Looks nice</h5>
+      <br>
+      <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+      </ul>
+
+      <div class="tabs-content text-left" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<!-- Statistics -->
+<section id="statistics" data-magellan-target="statistics">
+  <div class="row">
+    <div class="columns small-10 small-centered text-center">
+      <h2>How about some stats?</h2>
+      <h5>Wow, great</h5>
+      <br>
+      {{> stats-list}}
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<!-- CTA -->
+<div class="row">
+  <div class="columns small-10 small-centered text-center">
+    <div class="callout large primary">
+      <h5>You should really buy this product.</h5>
+      <a href="#" class="button">Buy Now</a>
+    </div>    
+  </div>
+</div>
+
+<br><br><br>
+
+<!-- Features -->
+<section id="features" data-magellan-target="features">
+  {{> marketing-site-three-up}}
+</section>
+
+<br><br><br>
+
+<!-- Testimonials -->
+<section id="testimonials" data-magellan-target="testimonials">
+  {{> testimonial-slider}}
+</section>
+
+<br><br><br>
+
+<!-- Main CTA -->
+<div class="row">
+  <div class="columns small-6 small-centered text-center">
+    {{> form-icons}}
+  </div>
+</div>
+
+<br><br><br>
+
+<!-- Footer -->
+<footer>
+  {{> social-footer}}
+</footer>
